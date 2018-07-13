@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">NoticeBoard</string>
+    <string name="name_edit_text_label">Enter name</string>
+    <string name="body_edit_text_label">Enter notice</string>
+    <string name="post_button_label">Post</string>
+    <string name="subject_edit_text_hint">Enter subject</string>
+    <string name="edit_post_activity_label">Edit post</string>
+    <string name="create_post_activity_label">Create post</string>
+    <string name="app_tagline">Notices, in a snap!</string>
+    <string name="sign_in_label">Sign in to explore NewsBoard!</string>
+    <string name="email_address_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="log_in_label">Sign in</string>
+    <string name="or_label">Or</string>
+    <string name="sign_up_label">Sign up</string>
+    <string name="error_email">Check email address and try again</string>
+    <string name="error_password">Check password and try again</string>
+    <string name="authentication_failed_message">Authentication Failed</string>
+    <string name="empty_input_field">%1$s cannot be empty</string>
+    <string name="incorrect_input_field">%1$s is incorrect</string>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "673510811246",
+    "firebase_url": "https://noticeboard-faea2.firebaseio.com",
+    "project_id": "noticeboard-faea2",
+    "storage_bucket": "noticeboard-faea2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673510811246:android:3638cca7df33fb2c",
+        "android_client_info": {
+          "package_name": "io.github.umangjpatel.noticeboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673510811246-v8n6su762prulf3hj0nh4c6du1co9cai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.github.umangjpatel.noticeboard",
+            "certificate_hash": "39583999f69833ab1cc7ed8657c74088c0176e82"
+          }
+        },
+        {
+          "client_id": "673510811246-lbu409ed4t3sil8sg4gdges2l9a1bhn4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5HydiisTNJC-7PzSkDO8AXbMPA3NGY6w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673510811246-lbu409ed4t3sil8sg4gdges2l9a1bhn4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
