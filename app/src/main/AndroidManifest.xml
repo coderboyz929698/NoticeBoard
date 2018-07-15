@@ -31,12 +31,18 @@
             android:name=".home.student.StudentHomeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".edit.PostEditActivity"
+            android:name=".create.CreatePostActivity"
+            android:label="@string/create_post_activity_label"
             android:parentActivityName=".home.faculty.FacultyHomeActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".signup.SignUpActivity"
-            android:theme="@style/SignupTheme"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".signup.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SignupTheme" />
+        <activity
+            android:name=".detail.NoticeDetailActivity"
+            android:parentActivityName=".home.faculty.FacultyHomeActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

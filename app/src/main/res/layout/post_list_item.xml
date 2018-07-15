@@ -7,14 +7,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:background="?android:selectableItemBackground"
-        android:clickable="true"
-        android:focusable="true"
         app:cardElevation="16dp">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="?android:selectableItemBackground">
 
             <android.support.v7.widget.AppCompatTextView
                 android:id="@+id/post_faculty_text_view"

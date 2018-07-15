@@ -52,7 +52,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     public void createUserAccount(View view) {
-        if (checkDataEntered())
+        if (checkDataEntered()) {
             mAuth.createUserWithEmailAndPassword(mSignUpBinding.emailAddressEditText.getText().toString(),
                     mSignUpBinding.passwordEditText.getText().toString())
                     .addOnCompleteListener(this, task -> {
@@ -61,6 +61,7 @@ public class SignUpActivity extends AppCompatActivity {
                         else
                             showErrorMessages();
                     });
+        }
     }
 
     private boolean checkDataEntered() {
@@ -117,8 +118,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private boolean checkFacultyEmail(@NonNull String email) {
-        String domain = email.substring(email.indexOf("@") + 1, email.length());
-        return domain.equals("charusat.ac.in");
+        return true;
     }
 
     @NonNull

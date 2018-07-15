@@ -1,4 +1,4 @@
-package io.github.umangjpatel.noticeboard.edit;
+package io.github.umangjpatel.noticeboard.create;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
@@ -6,11 +6,11 @@ import android.support.annotation.NonNull;
 
 import io.github.umangjpatel.noticeboard.repositories.PostRepository;
 
-public class PostEditViewModel extends AndroidViewModel {
+public class CreatePostViewModel extends AndroidViewModel {
 
     private PostRepository mPostRepository;
 
-    public PostEditViewModel(@NonNull Application application) {
+    public CreatePostViewModel(@NonNull Application application) {
         super(application);
         mPostRepository = PostRepository.getInstance();
     }

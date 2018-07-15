@@ -12,8 +12,8 @@ import android.view.View;
 import java.util.List;
 
 import io.github.umangjpatel.noticeboard.R;
+import io.github.umangjpatel.noticeboard.create.CreatePostActivity;
 import io.github.umangjpatel.noticeboard.databinding.ActivityFacultyHomeBinding;
-import io.github.umangjpatel.noticeboard.edit.PostEditActivity;
 import io.github.umangjpatel.noticeboard.models.Post;
 import io.github.umangjpatel.noticeboard.utils.adapters.PostsAdapter;
 
@@ -38,7 +38,7 @@ public class FacultyHomeActivity extends AppCompatActivity {
 
     private void setupAdapter(List<Post> posts) {
         if (mPostsAdapter == null) {
-            mPostsAdapter = new PostsAdapter(posts, false);
+            mPostsAdapter = new PostsAdapter(posts);
             mHomeBinding.postsRecyclerView.setAdapter(mPostsAdapter);
         } else {
             mPostsAdapter.setPosts(posts);
@@ -52,6 +52,6 @@ public class FacultyHomeActivity extends AppCompatActivity {
 
 
     public void createNotice(View view) {
-        startActivity(PostEditActivity.newIntent(this, null));
+        startActivity(CreatePostActivity.newIntent(this));
     }
 }

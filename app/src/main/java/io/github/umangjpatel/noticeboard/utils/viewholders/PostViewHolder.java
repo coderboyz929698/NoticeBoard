@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import io.github.umangjpatel.noticeboard.databinding.PostListItemBinding;
-import io.github.umangjpatel.noticeboard.edit.PostEditActivity;
+import io.github.umangjpatel.noticeboard.detail.NoticeDetailActivity;
 import io.github.umangjpatel.noticeboard.models.Post;
 
 public class PostViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -21,12 +21,12 @@ public class PostViewHolder extends RecyclerView.ViewHolder implements View.OnCl
         mItemBinding = itemBinding;
     }
 
-    public void bind(Post post, boolean isFaculty) {
+    public void bind(Post post) {
         mPost = post;
         mItemBinding.postFacultyTextView.setText(post.getFacultyName());
         mItemBinding.postSubjectTextView.setText(post.getSubject());
         mItemBinding.postDateTextView.setText(formatDate(post.getDate()));
-        itemView.setOnClickListener(isFaculty ? this : null);
+        itemView.setOnClickListener(this);
         mItemBinding.executePendingBindings();
     }
 
@@ -42,7 +42,7 @@ public class PostViewHolder extends RecyclerView.ViewHolder implements View.OnCl
         mItemBinding
                 .getRoot()
                 .getContext()
-                .startActivity(PostEditActivity.newIntent(mItemBinding.getRoot().getContext(),
-                        mPost));
+                .startActivity(NoticeDetailActivity
+                        .newIntent(mItemBinding.getRoot().getContext(), mPost));
     }
 }

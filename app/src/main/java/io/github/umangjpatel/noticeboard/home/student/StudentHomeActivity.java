@@ -36,7 +36,7 @@ public class StudentHomeActivity extends AppCompatActivity {
 
     private void setupAdapter(List<Post> posts) {
         if (mPostsAdapter == null) {
-            mPostsAdapter = new PostsAdapter(posts, false);
+            mPostsAdapter = new PostsAdapter(posts);
             mHomeBinding.postsRecyclerView.setAdapter(mPostsAdapter);
         } else {
             mPostsAdapter.setPosts(posts);

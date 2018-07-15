@@ -14,11 +14,9 @@ import io.github.umangjpatel.noticeboard.utils.viewholders.PostViewHolder;
 public class PostsAdapter extends RecyclerView.Adapter<PostViewHolder> {
 
     private List<Post> mPosts;
-    private boolean mIsFaculty;
 
-    public PostsAdapter(List<Post> posts, boolean isFaculty) {
+    public PostsAdapter(List<Post> posts) {
         mPosts = posts;
-        mIsFaculty = isFaculty;
     }
 
     public void setPosts(List<Post> posts) {
@@ -36,7 +34,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull PostViewHolder holder, int position) {
         Post post = mPosts.get(position);
-        holder.bind(post, mIsFaculty);
+        holder.bind(post);
     }
 
     @Override
